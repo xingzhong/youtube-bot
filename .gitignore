@@ -4,3 +4,6 @@
 
 # Ignore client secrets file
 client_secrets.json
+
+#Ignore json file created when a video is successfully uploaded
+uploadVideo.py-oauth2.json
