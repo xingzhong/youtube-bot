@@ -1,6 +1,7 @@
 *.swo
 *.swp
 *~
+*.pyc
 
 # Ignore client secrets file
 client_secrets.json
