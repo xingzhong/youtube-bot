@@ -3,6 +3,7 @@
 *~
 *.pyc
 
+video/*
 # Ignore client secrets file
 client_secrets.json
 
