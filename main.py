@@ -2,6 +2,7 @@ import glob
 import os
 from uploadVideo import get_authenticated_service, initialize_upload
 from oauth2client.tools import argparser, run_flow
+from apiclient.errors import HttpError
 
 if __name__ == '__main__':
 	for fn in glob.glob('./video/*.flv'):
