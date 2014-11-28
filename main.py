@@ -1,4 +1,5 @@
 import glob
+import os
 from uploadVideo import get_authenticated_service, initialize_upload
 
 if __name__ == '__main__':
@@ -11,5 +12,6 @@ if __name__ == '__main__':
 		youtube = get_authenticated_service(args)
 		try:
 			initialize_upload(youtube, args)
+			os.remove(fn)
 		except HttpError, e:
 			print "An HTTP error %d occurred:\n%s" % (e.resp.status, e.content)
